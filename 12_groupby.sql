@@ -5,4 +5,4 @@ GROUP BY IdCliente
 --Having vai sergir para filtrar dados depois do agrupamento
 HAVING sum(qtdePontos) >= 4000
 ORDER BY SUM(QtdePontos) DESC
-LIMIT 10
+LIMIT 10 
