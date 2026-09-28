@@ -1,4 +1,3 @@
---selecione todos os cluentes com o email cadastrado
-SELECT * FROM clientes
+--selecione todos os clientes com o email cadastrado
+SELECT COUNT(flEmail) FROM clientes
 WHERE flEmail = 1;
-
