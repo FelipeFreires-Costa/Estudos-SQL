@@ -11,7 +11,7 @@ ON t1.IdTransacao = t2.IdTransacao
 LEFT JOIN produtos as t3
 ON t2.IdProduto = t3.IdProduto
 
-WHERE DescNomeProduto = 'Lista de presença'
+WHERE t3.DescNomeProduto = 'Lista de presença'
 
 GROUP BY substr(t1.DtCriacao, 1, 7)
 ORDER BY COUNT(DISTINCT t1.IdTransacao) DESC
